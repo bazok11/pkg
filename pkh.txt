@@ -19,4 +19,5 @@ OneClick
 user_agent
 Faker
 Flask
+telethon
 beautifulsoup4
