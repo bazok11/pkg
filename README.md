@@ -65,3 +65,11 @@ pazok.tele_ms(token, id, txt=text, img=image, buttons=buttons)
 ___
 
 
+# Now we have some simple functions.
+### The first function is to create a random user agent in this format:
+`Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36`
+### Here's an example:
+```python
+import pazok
+pazok.agnt()
+```
