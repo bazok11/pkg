@@ -10,7 +10,7 @@ ___
 
 ___
 
-# Let's start with the function tele_ms
+# تيست
 ### This function is designed to send messages to a specific Telegram user using the bot token and user's chat ID.
 ### The function supports sending formatted text using MarkdownV2. Here are
 #### the supported formats:
