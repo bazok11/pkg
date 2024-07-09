@@ -14,7 +14,7 @@ ___
 ### This function is designed to send messages to a specific Telegram user using the bot token and user's chat ID.
 ### The function supports sending formatted text using MarkdownV2. Here are
 #### the supported formats:
-`
+```python
 Bold text: *text*
 Italic text: _text_
 Strikethrough text: ~text~
@@ -22,4 +22,4 @@ Monospaced text: `text`
 Text with a link: [text](url)
 Spoiler text: ||text||
 Code block: ```code```
-`
+```
