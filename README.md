@@ -61,3 +61,7 @@ pazok.tele_ms(token, id, txt=text, file=file, buttons=buttons)
 # Sending an image
 pazok.tele_ms(token, id, txt=text, img=image, buttons=buttons)
 ```
+
+___
+
+
