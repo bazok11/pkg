@@ -25,7 +25,7 @@ Code block: ```code```
 ```
 ### It also supports sending files and images via URL or file path. The function automatically detects whether the input is a path or URL and handles it accordingly. If the file or image includes text, it will be automatically added to the file or image description. Additionally, the function supports sending buttons of type types.InlineKeyboardButton, allowing multiple buttons in the same message or just one button. Let's start with examples.
 
-```python
+```javascript
 # Importing the library
 import pazok
 
