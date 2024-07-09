@@ -84,3 +84,73 @@ ___
 import pazok
 pazok.agnt_in()
 ```
+
+___
+
+
+# The third function is to obtain some cookies from the Instagram API. The cookie names that can be obtained are csrftoken and mid.
+### Here's an example:
+```python
+import pazok
+cok = pazok.cook()
+print(cok.csrftoken)
+print(cok.mid)
+
+# Or like this:
+
+print(pazok.cook().csrftoken)
+print(pazok.cook().mid)
+```
+
+___
+
+
+# Now we have some functions for text decoration.
+#### A function to display text with a fading effect. This function changes the text color from black to white through all shades of these colors to create a smooth fading effect. You can also set the duration of the effect and format the text alignment if you want it centered on the screen or in its natural form. Here's an example:
+```python
+import pazok
+
+text = "test" # The text
+time = 0.05 # Duration of the effect
+align = True # If you want it continuously centered, write False
+
+pazok.tl(text, time, align)
+```
+
+___
+
+# The second function
+### The next function is to decorate English letters with 8 types.
+### We can display the types using the command
+```python
+pazok.info_motifs()
+
+# This command will return to us
+
+# - 1 - 𝗛𝗲𝗹𝗹𝗼 𝗪𝗼𝗿𝗹𝗱 𝟭𝟮𝟯
+# - 2 - 𝙷𝚎𝚕𝚕𝚘 𝚆𝚘𝚛𝚕𝚍 𝟷𝟸𝟹
+# - 3 - 𝐇𝐞𝐥𝐥𝐨 𝐖𝐨𝐫𝐥𝐝 𝟏𝟐𝟑
+# - 4 - ʜᥱᥣᥣ᥆ ᴡ᥆ᖇᥣძ 𝟙𝟚𝟛
+# - 5 - ᕼᗴᒪᒪO ᗯOᖇᒪᗪ 123
+# - 6 - 𝕳𝖊𝖑𝖑𝖔 𝖂𝖔𝖗𝖑𝖉 123
+# - 7 - 𝓗𝓮𝓵𝓵𝓸 𝓦𝓸𝓻𝓵𝓭 123
+# - 8 - ℍ𝕖𝕝𝕝𝕠 𝕎𝕠𝕣𝕝𝕕 𝟙𝟚𝟛
+
+# Now we can use the decoration function like this
+
+print(pazok.motifs("text", 1)) # Note that I chose pattern number 1. I can change this number to 2 or 3 to others
+```
+___
+
+
+
+
+
+
+
+
+
+
+
+
+
