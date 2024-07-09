@@ -1,1 +1,1 @@
-`[url_pypi]`(https://pypi.org/project/pazok/)
+`[url_pypi]` (https://pypi.org/project/pazok/)
