@@ -73,3 +73,14 @@ ___
 import pazok
 pazok.agnt()
 ```
+
+___
+
+
+# The second function is to create an Instagram-specific user agent in this format:
+`Instagram 136.0.0.34.124 Android (23/6.0.1; 640dpi; 1440x2560; samsung; SM-G935; hero2lte; samsungexynos8890; en_US; 208061712)`
+### Here's an example:
+```python
+import pazok
+pazok.agnt_in()
+```
