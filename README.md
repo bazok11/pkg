@@ -123,6 +123,7 @@ ___
 ### The next function is to decorate English letters with 8 types.
 ### We can display the types using the command
 ```python
+import pazok
 pazok.info_motifs()
 
 # This command will return to us
@@ -141,6 +142,227 @@ pazok.info_motifs()
 print(pazok.motifs("text", 1)) # Note that I chose pattern number 1. I can change this number to 2 or 3 to others
 ```
 ___
+
+# The third function
+### This function consists of ready-made colors in the library. Using this function is different from other functions in that we must call the library in this way
+```python
+import pazok
+from pazok import *
+
+# We can display color names through this command
+
+print(pazok.name_clo())
+
+# This command will print
+
+# o = orange
+# b = blue
+# m = white
+# F = dark green
+# Z = light red
+# e = dark gray
+# C = strong white
+# p = wide line
+# X = yellow
+# j = pink
+# E = light gray
+
+# Each letter represents its color
+# For example, if we write
+print(f"{e} TEST")
+# The word will print in dark gray
+# And so on the rest of the colors
+```
+___
+
+# The fourth function
+### We have two functions that do the same job almost
+#### The function is to display text with a waiting form and a certain period
+#### The first is:
+```python
+import pazok
+text = "text" # The text
+staliy = "name_staliy" # The pattern
+time = 1 # Time
+
+pazok.pazok_rich(text, staliy, time)
+
+# We can display the names of the patterns using this command
+
+pazok.name_rich()
+
+# Will return
+# 1. arrow
+# 2. christmas
+# 3. circle
+# 4. clock
+# 5. hearts
+# 6. moon
+# 7. pong
+# 8. runner
+# 9. star
+# 10. weather
+```
+___
+
+## The second is:
+```python
+import pazok
+text = "text" # The text
+staliy = "bounce" # The pattern
+time = 1 # Time
+
+pazok.pazok_halo(text, staliy, time)
+
+# We can display their special styles with this command
+pazok.name_halo()
+
+# Will print
+
+# 1. dots
+# 2. dots2
+# 3. dots3
+# 4. dots4
+# 5. dots5
+# 6. dots6
+# 7. dots7
+# 8. dots8
+# 9. dots9
+# 10. dots10
+# 11. dots11
+# 12. dots12
+# 13. line
+# 14. line2
+# 15. pipe
+# 16. simpleDots
+# 17. simpleDotsScrolling
+# 18. star
+# 19. star2
+# 20. flip
+# 21. hamburger
+# 22. growVertical
+# 23. growHorizontal
+# 24. balloon
+# 25. balloon2
+# 26. noise
+# 27. bounce
+# 28. boxBounce
+# 29. boxBounce2
+# 30. triangle
+# 31. arc
+# 32. circle
+# 33. square
+# 34. circleQuarters
+# 35. circleHalves
+# 36. squish
+# 37. toggle
+# 38. toggle2
+# 39. toggle3
+# 40. toggle4
+# 41. toggle5
+# 42. toggle6
+# 43. toggle7
+# 44. toggle8
+# 45. toggle9
+# 46. toggle10
+# 47. toggle11
+# 48. toggle12
+# 49. toggle13
+# 50. arrow
+# 51. arrow2
+# 52. arrow3
+# 53. bouncyBall
+# 54. bouncyBall2
+# 55. smiley
+# 56. monkey
+# 57. hearts
+# 58. clock
+# 59. earth
+# 60. moon
+# 61. runner
+# 62. pong
+# 63. shark
+# 64. dqpb
+# 65. weather
+# 66. emoji
+# 67. fire
+# 68. lioud
+# 69. magic
+# 70. curses
+# 71. chrome
+# 72. windows
+# 73. eyes
+# 74. action
+# 75. mr.robot
+# 76. dvd
+# 77. pacman
+# 78. audi
+# 79. bing
+# 80. mobile
+# 81. data
+# 82. bit
+# 83. mark
+# 84. bit10
+# 85. mew
+# 86. fbi
+# 87. all
+# 88. food
+# 89. ztang
+```
+___
+
+## The following functions are used to organize data and execute functions using threads. I'll start with the explanation.
+
+### The first function is designed to convert curl commands into requests using the requests library. Here's an example:
+
+#### Assuming this is a curl command: `curl http://en.wikipedia.org/`
+```python
+# Usage:
+import pazok
+
+curl_command = "curl http://en.wikipedia.org/"
+print(pazok.cURL(curl_command))
+
+# It will print the response similar to:
+# https://t.me/b_azok
+import requests
+
+response = requests.get("http://en.wikipedia.org/").text
+
+print(response)
+```
+___
+
+# The second function organizes JSON responses into a vertical format. 
+
+### Assuming we have this response:
+`{'message': 'The password you entered is incorrect. Please try again.', 'status': 'fail', 'error_type': 'bad_password'}`
+```python
+# If we use the command:
+pazok.json_req(response_variable)
+
+# It will print:
+# message: The password you entered is incorrect. Please try again.
+# status: fail
+# error_type: bad_password
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
