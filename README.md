@@ -5,4 +5,4 @@
 **install:** `pip install pazok`
 
 
-![txt](https://pbs.twimg.com/media/FRbY8FGX0AAy0mZ.jpg)
+![txt](https://j.top4top.io/p_311210ur10.png)
