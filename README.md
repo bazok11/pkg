@@ -338,6 +338,7 @@ ___
 ### Assuming we have this response:
 `{'message': 'The password you entered is incorrect. Please try again.', 'status': 'fail', 'error_type': 'bad_password'}`
 ```python
+import pazok
 # If we use the command:
 pazok.json_req(response_variable)
 
@@ -346,33 +347,100 @@ pazok.json_req(response_variable)
 # status: fail
 # error_type: bad_password
 ```
+___
 
+# The third function's task is to execute functions with multiple threads, specifying the number of threads. Here's an example:
+```python
+import pazok
+def test():
+    print("xxxx")
 
+number_of_threads = 5  # You can put any number you want
+pazok.sb(test, number_of_threads)
+```
+___
 
+# The fourth function is designed to fetch session information for a specific Instagram account by logging in with a username and password. Here's an example:
+```python
+import pazok
 
+username = "username"
+password = "password"
 
+test = pazok.log_in(username, password)
+print(test.csrftoken)
+print(test.sessionid)
+print(test.ds_user_id)
+print(test.rur)
+```
+___
 
+### The first function for generating random data, but in a simple way. Essentially, the function replaces numbers with types of data. I'll clarify each number and its value. Number 1 and its random value between a-z and 0-9, for example, if I write 111, the result will be ks6. Number 2, its random value is the same as number 1, but with a slight difference when placing number 2 in different places within the function, the value will be the same in all places, for example, if I write 222, the random value will be hhh. Number 3, its random value is _ or . If I write 1313, this is an example of no more. The result will be h_i. Number 4, its random value is numbers only from 0 to 9. I think the command has become clear, now an example of using the function.
+```python
+import pazok
+username = pazok.user_ran("2113244")
+print(username)
+```
+___
 
+## The second function to get data from my nickname file from the first row to the last row in the function are two options to delete the data that the user gets or any line you get to move to the last line in the file to create a loop or the user's opinion for example to use the function
+```python
+import pazok
+data_file = pazok.user_file("name_file.txt", True)
+print(data_file)
+```
+### I put True to activate the deletion mode from the file after obtaining it if I want to turn off the deletion mode, I put False
+___
 
+# The third function
+### Now we have a function that stores the bot's code and the user's private chat ID and returns the data at the time of need, and if the data is not found in the hidden file, the function requests the data, and this helps us facilitate the use of our tools. Here's an example.
+```python
+import pazok
+token, id = pazok.info_bot()
+```
+## If the user wants to delete his data from the hidden file, he can use a special function for example
+```python
+import pazok
+pazok.info_bot_dlet()
+```
+### This function will search in all paths for user data and delete it
+___
 
+# The fourth function
+### A simple and useful function designed to make the script sleep and there is a default time in the function or you can manually set the sleep time the default time is between 0.5 and 1 second, for example
+```python
+import pazok
+pazok.sleep()  # Now in default mode
+pazok.sleep(5)  # Now you have manually specified the value
+```
+___
 
+# The fifth function
+### A wonderful function for converting images to text in two styles. The first is dots like this⣿⣿⣿ and the second is random symbols. There is a small note you must have the background of the image white and the shape you want to convert to text in black to get the best result. Here's an example of using the function.
+```python
+import pazok
+z = "image path"
+x = image size in numbers
+a = required pattern 1 for dots and 2 for symbols
+print(pazok.picture(z, x, a))
+```
+___
 
+# The sixth function
+### A function designed to set a specific date and time and the function compares the current time with the specified time if it is less than the current time it returns false and if the current time is greater than or equal to the specified time it returns true. There is a default time in the function if the user wants to set a date only the default time is 23:59:59. Here's an example of using the function.
+```python
+import pazok
+test = pazok.timeeg(2024, 7, 5)
+if test == True:
+    print("The validity period has ended")
+```
+___
 
+# The seventh function
+### It checks the existence of a specific library or a group of libraries, and if it is not installed, it automatically installs the libraries. Here's an example.
+```python
+import pazok
+pazok.install("requests", "random", "threading")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# I can put any number of libraries
+```
